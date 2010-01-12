@@ -1,0 +1,8 @@
+pkg
+doc
+web
+tmp
+.DS_Store
+.yardoc
+*.swp
+*~
