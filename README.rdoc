@@ -11,7 +11,7 @@ A YARD plugin for parsing DataMapper syntax.
 == FEATURES:
 
 * Parses +property+ statements.
-* Parses +has n+ statements.
+* Parses +has+ +n+, 0, 1 statements.
 * Parses +belongs_to+ statements.
 
 == REQUIREMENTS:
