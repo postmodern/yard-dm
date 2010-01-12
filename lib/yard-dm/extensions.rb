@@ -1,27 +1,25 @@
 require 'yard'
 
 module YARD
-  module Handlers
-    module Ruby
-      class Base < Handlers::Base
+  module DM
+    module Extensions
 
-        protected
+      protected
 
-        def effected_namespace
-          if statement.type == :command_call
-            context = statement.jump(:var_ref)
+      def effected_namespace
+        if statement.type == :command_call
+          context = statement.jump(:var_ref)
 
-            unless context.source == 'self'
-              return ensure_loaded!(
-                Registry.resolve(namespace,context.source)
-              )
-            end
+          unless context.source == 'self'
+            return ensure_loaded!(
+              Registry.resolve(namespace,context.source)
+            )
           end
-
-          return namespace
         end
 
+        return namespace
       end
+
     end
   end
 end
