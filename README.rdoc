@@ -16,7 +16,7 @@ A YARD plugin for parsing DataMapper syntax.
 
 == REQUIREMENTS:
 
-* [yard]{http://yardoc.org/} >= 0.4.0
+* {yard}[http://yardoc.org/] >= 0.4.0
 
 == INSTALL:
 
