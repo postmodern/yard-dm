@@ -1,4 +1,4 @@
-= yard_dm
+= yard-dm
 
 * http://github.com/postmodern/yard-dm
 * http://github.com/postmodern/yard-dm/issues
@@ -6,7 +6,7 @@
 
 == DESCRIPTION:
 
-A YARD plugin for generation documentation for DataMapper projects.
+A YARD plugin for parsing DataMapper syntax.
 
 == FEATURES:
 
