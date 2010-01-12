@@ -1,10 +1,12 @@
-require 'yard'
+require 'yard-dm/extensions'
 
-require 'ronin/yard/handlers/ruby/base'
+require 'yard'
 
 module YARD
   module DM
     class PropertyHandler < Base
+
+      include Extensions
 
       handles method_call(:property)
 
