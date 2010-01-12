@@ -1,12 +1,11 @@
 require 'yard'
 
 module YARD
-  module Handlers
-    module Ruby
-      module Legacy
-        class PropertyHandler < Base
+  module DM
+    module Legacy
+      class PropertyHandler < Base
 
-          handles /\Aproperty\s/
+        handles /\Aproperty\s/
 
           def process
             nobj = namespace
@@ -34,7 +33,6 @@ module YARD
             end
           end
 
-        end
       end
     end
   end

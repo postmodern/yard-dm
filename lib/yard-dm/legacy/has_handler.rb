@@ -1,12 +1,11 @@
 require 'yard'
 
 module YARD
-  module Handlers
-    module Ruby
-      module Legacy
-        class HasHandler < Base
+  module DM
+    module Legacy
+      class HasHandler < Base
 
-          handles /\Ahas\s+([1-9]\d*|n|(0|1)\.\.n),\s/
+        handles /\Ahas\s+([1-9]\d*|n|(0|1)\.\.n),\s/
 
           def process
             nobj = namespace
@@ -27,7 +26,6 @@ module YARD
             end
           end
 
-        end
       end
     end
   end
