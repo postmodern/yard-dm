@@ -1,0 +1,6 @@
+require 'yard/handlers/ruby/property_handler'
+require 'yard/handlers/ruby/has_handler'
+require 'yard/handlers/ruby/belongs_to_handler'
+require 'yard/handlers/ruby/legacy/property_handler'
+require 'yard/handlers/ruby/legacy/has_handler'
+require 'yard/handlers/ruby/legacy/belongs_to_handler'

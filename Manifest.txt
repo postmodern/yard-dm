@@ -2,6 +2,7 @@ History.rdoc
 Manifest.txt
 README.rdoc
 Rakefile
+lib/yard-dm.rb
 lib/yard/handlers/ruby/property_handler.rb
 lib/yard/handlers/ruby/has_handler.rb
 lib/yard/handlers/ruby/belongs_to_handler.rb
