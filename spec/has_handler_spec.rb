@@ -12,6 +12,10 @@ describe "HasHandler" do
       parse_file :simple_has_n
     end
 
+    it "should define class-methods for the 'has n' relationships" do
+      yard('SimpleHasN.things').should be_instance_of(CodeObjects::MethodObject)
+    end
+
     it "should define reader methods for the 'has n' relationships" do
       yard('SimpleHasN#things').should be_instance_of(CodeObjects::MethodObject)
     end
