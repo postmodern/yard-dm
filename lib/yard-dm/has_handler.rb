@@ -4,7 +4,7 @@ require 'yard'
 
 module YARD
   module DM
-    class HasHandler < Base
+    class HasHandler < YARD::Handlers::Ruby::Base
 
       include Extensions
 

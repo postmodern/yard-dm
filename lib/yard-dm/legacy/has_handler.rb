@@ -3,7 +3,7 @@ require 'yard'
 module YARD
   module DM
     module Legacy
-      class HasHandler < Base
+      class HasHandler < YARD::Handlers::Ruby::Legacy::Base
 
         handles /\Ahas\s+([1-9]\d*|n|(0|1)\.\.n),\s/
 
