@@ -1,4 +1,4 @@
-class SimpleHasN
+class HasN
 
   include DataMapper::Resource
 
