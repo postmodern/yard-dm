@@ -10,5 +10,9 @@ module Helpers
       path = File.join(Helpers::Examples::EXAMPLES_DIR, "#{file}.rb.txt")
       YARD::Parser::SourceParser.parse(path)
     end
+
+    def yard(name)
+      YARD::Registry.at(name)
+    end
   end
 end

@@ -12,12 +12,12 @@ describe "PropertyHandler" do
   end
 
   it "should define reader methods for the properties" do
-    P('SimpleProperties#id').should be_instance_of(CodeObjects::MethodObject)
-    P('SimpleProperties#name').should be_instance_of(CodeObjects::MethodObject)
+    yard('SimpleProperties#id').should be_instance_of(CodeObjects::MethodObject)
+    yard('SimpleProperties#name').should be_instance_of(CodeObjects::MethodObject)
   end
 
   it "should define writer methods for the properties" do
-    P('SimpleProperties#id=').should be_instance_of(CodeObjects::MethodObject)
-    P('SimpleProperties#name=').should be_instance_of(CodeObjects::MethodObject)
+    yard('SimpleProperties#id=').should be_instance_of(CodeObjects::MethodObject)
+    yard('SimpleProperties#name=').should be_instance_of(CodeObjects::MethodObject)
   end
 end
