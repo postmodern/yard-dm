@@ -15,8 +15,8 @@ spec/helpers/examples.rb
 spec/helpers/examples/simple_properties.rb.txt
 spec/helpers/examples/simple_belongs_to.rb.txt
 spec/helpers/examples/has_n.rb.txt
-spec/helpers/examples/has_0.rb.txt
-spec/helpers/examples/has_1.rb.txt
+spec/helpers/examples/has_zero.rb.txt
+spec/helpers/examples/has_one.rb.txt
 spec/property_handler_spec.rb
 spec/belongs_to_handler_spec.rb
 spec/has_handler_spec.rb
