@@ -11,6 +11,7 @@ Hoe.spec('yard-dm') do
 
   self.readme_file = 'README.rdoc'
   self.history_file = 'History.rdoc'
+  self.remote_rdoc_dir = '/'
 
   self.rspec_options += ['--colour', '--format', 'specdoc']
 
