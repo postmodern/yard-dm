@@ -3,7 +3,7 @@ require 'yard'
 module YARD
   module DM
     module Legacy
-      class BelongsToHandler < Base
+      class BelongsToHandler < YARD::Handlers::Ruby::Legacy::Base
 
         handles /\Abelongs_to\s/
 
