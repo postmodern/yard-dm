@@ -21,6 +21,8 @@ Hoe.spec('yard-dm') do
   self.extra_dev_deps += [
     ['rspec', '>=1.2.9']
   ]
+
+  self.spec_extras.merge!(:has_rdoc => 'yard')
 end
 
 # vim: syntax=ruby
