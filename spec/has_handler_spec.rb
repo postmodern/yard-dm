@@ -45,7 +45,7 @@ describe "HasHandler" do
 
   describe "has 1" do
     before(:all) do
-      parse_file :has_zero
+      parse_file :has_one
     end
 
     it "should define class-methods for the 'has 1' relationships" do
