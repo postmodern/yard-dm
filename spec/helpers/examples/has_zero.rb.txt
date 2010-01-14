@@ -1,0 +1,9 @@
+class HasN
+
+  include DataMapper::Resource
+
+  property :id, Serial
+
+  has 0, :things
+
+end

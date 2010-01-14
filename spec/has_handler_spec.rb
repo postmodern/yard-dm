@@ -24,4 +24,40 @@ describe "HasHandler" do
       yard('HasN#things=').should be_instance_of(CodeObjects::MethodObject)
     end
   end
+
+  describe "has 0" do
+    before(:all) do
+      parse_file :has_zero
+    end
+
+    it "should define class-methods for the 'has 0' relationships" do
+      yard('HasZero.things').should be_instance_of(CodeObjects::MethodObject)
+    end
+
+    it "should define reader methods for the 'has 0' relationships" do
+      yard('HasZero#things').should be_instance_of(CodeObjects::MethodObject)
+    end
+
+    it "should define writer methods for the 'has 0' relationships" do
+      yard('HasZero#things=').should be_instance_of(CodeObjects::MethodObject)
+    end
+  end
+
+  describe "has 1" do
+    before(:all) do
+      parse_file :has_zero
+    end
+
+    it "should define class-methods for the 'has 1' relationships" do
+      yard('HasOne.things').should be_instance_of(CodeObjects::MethodObject)
+    end
+
+    it "should define reader methods for the 'has 1' relationships" do
+      yard('HasOne#things').should be_instance_of(CodeObjects::MethodObject)
+    end
+
+    it "should define writer methods for the 'has 1' relationships" do
+      yard('HasOne#things=').should be_instance_of(CodeObjects::MethodObject)
+    end
+  end
 end
