@@ -3,7 +3,7 @@ require 'yard'
 module YARD
   module DM
     module Legacy
-      class PropertyHandler < Base
+      class PropertyHandler < YARD::Handlers::Ruby::Legacy::Base
 
         handles /\Aproperty\s/
 

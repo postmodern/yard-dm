@@ -4,7 +4,7 @@ require 'yard'
 
 module YARD
   module DM
-    class PropertyHandler < Base
+    class PropertyHandler < YARD::Handlers::Ruby::Base
 
       include Extensions
 
