@@ -1,5 +1,3 @@
-require 'yard'
-
 module YARD
   module DM
     module Legacy

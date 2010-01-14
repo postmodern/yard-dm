@@ -1,7 +1,5 @@
 require 'yard-dm/extensions'
 
-require 'yard'
-
 module YARD
   module DM
     class HasHandler < YARD::Handlers::Ruby::Base
