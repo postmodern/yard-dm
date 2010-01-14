@@ -24,6 +24,13 @@ module YARD
               o.source = statement.source
               o.signature = "def #{name}"
             end
+
+            register MethodObject.new(nobj, "#{name}=", mscope) do |o|
+              o.visibility = :public
+              o.source = statement.source
+              o.signature = "def #{name}="
+              o.parameters = [["new_#{name}", nil]]
+            end
           end
 
       end
