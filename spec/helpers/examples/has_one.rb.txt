@@ -1,4 +1,4 @@
-class HasN
+class HasOne
 
   include DataMapper::Resource
 
