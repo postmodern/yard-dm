@@ -1,0 +1,9 @@
+class HasOneToN
+
+  include DataMapper::Resource
+
+  property :id, Serial
+
+  has 0..n, :things
+
+end
