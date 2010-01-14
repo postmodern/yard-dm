@@ -12,4 +12,5 @@ lib/yard-dm/legacy/has_handler.rb
 lib/yard-dm/legacy/belongs_to_handler.rb
 spec/spec_helper.rb
 spec/helpers/examples.rb
+spec/helpers/examples/simple_properties.rb.txt
 spec/property_handler_spec.rb
