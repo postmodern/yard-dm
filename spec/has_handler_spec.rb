@@ -30,16 +30,16 @@ describe "HasHandler" do
       parse_file :has_zero
     end
 
-    it "should define class-methods for the 'has 0' relationships" do
-      yard('HasZero.things').should be_instance_of(CodeObjects::MethodObject)
+    it "should not define class-methods for the 'has 0' relationships" do
+      yard('HasZero.things').should be_nil
     end
 
-    it "should define reader methods for the 'has 0' relationships" do
-      yard('HasZero#things').should be_instance_of(CodeObjects::MethodObject)
+    it "should not define reader methods for the 'has 0' relationships" do
+      yard('HasZero#things').should be_nil
     end
 
-    it "should define writer methods for the 'has 0' relationships" do
-      yard('HasZero#things=').should be_instance_of(CodeObjects::MethodObject)
+    it "should not define writer methods for the 'has 0' relationships" do
+      yard('HasZero#things=').should be_nil
     end
   end
 
