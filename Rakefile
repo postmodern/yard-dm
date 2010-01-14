@@ -3,6 +3,7 @@
 require 'rubygems'
 require 'hoe'
 require 'hoe/signing'
+require './tasks/yard.rb'
 
 Hoe.spec('yard-dm') do
   self.version = '0.1.0'
