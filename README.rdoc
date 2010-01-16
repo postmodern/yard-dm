@@ -13,9 +13,26 @@ the +yardoc+ utility is ran on a project.
 
 == FEATURES:
 
-* Parses +property+ statements.
-* Parses +has+ +n+, <tt>1</tt>, <tt>0..n</tt> and <tt>1..n</tt> statements.
-* Parses +belongs_to+ statements.
+* Parses the following statements:
+  * Properties:
+
+      property :name, Type
+
+  * Has relationships:
+
+      has n, :things
+
+      has 1, :thing
+
+      has 0..n, :things
+
+      has 1..n, :things
+
+      has 2..5, :things
+
+  * Belongs to relationships:
+
+      belongs_to :stuff
 
 == REQUIREMENTS:
 
