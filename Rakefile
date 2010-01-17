@@ -6,7 +6,7 @@ require 'hoe/signing'
 require './tasks/yard.rb'
 
 Hoe.spec('yard-dm') do
-  self.version = '0.1.0'
+  self.version = '0.1.1'
   self.developer('Postmodern', 'postmodern.mod3@gmail.com')
 
   self.readme_file = 'README.rdoc'
