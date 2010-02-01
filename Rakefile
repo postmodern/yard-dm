@@ -9,8 +9,8 @@ Hoe.spec('yard-dm') do
   self.version = '0.1.1'
   self.developer('Postmodern', 'postmodern.mod3@gmail.com')
 
-  self.readme_file = 'README.rdoc'
-  self.history_file = 'History.rdoc'
+  self.readme_file = 'README.md'
+  self.history_file = 'History.md'
   self.remote_rdoc_dir = '/'
 
   self.rspec_options += ['--colour', '--format', 'specdoc']

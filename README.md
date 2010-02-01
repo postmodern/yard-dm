@@ -1,17 +1,17 @@
-= yard-dm
+# yard-dm
 
-* http://github.com/postmodern/yard-dm
-* http://github.com/postmodern/yard-dm/issues
+* [github.com/postmodern/yard-dm](http://github.com/postmodern/yard-dm/)
+* [github.com/postmodern/yard-dm/issues](http://github.com/postmodern/yard-dm/issues)
 * Postmodern (postmodern.mod3 at gmail.com)
 
-== DESCRIPTION:
+## DESCRIPTION:
 
 A YARD plugin for parsing DataMapper model syntax.
 
 Once yard-dm is installed, YARD will automatically load the plugin when ever
-the +yardoc+ utility is ran on a project.
+the `yardoc` utility is ran on a project.
 
-== FEATURES:
+## FEATURES:
 
 * Parses the following statements:
   * Properties:
@@ -34,15 +34,15 @@ the +yardoc+ utility is ran on a project.
 
       belongs_to :stuff
 
-== REQUIREMENTS:
+## REQUIREMENTS:
 
-* {yard}[http://yardoc.org/] >= 0.4.0
+* [yard](http://yardoc.org/) >= 0.4.0
 
-== INSTALL:
+## INSTALL:
 
-  $ sudo gem install yard-dm
+    $ sudo gem install yard-dm
 
-== LICENSE:
+## LICENSE:
 
 (The MIT License)
 
