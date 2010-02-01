@@ -13,26 +13,21 @@ the `yardoc` utility is ran on a project.
 
 ## FEATURES:
 
-* Parses the following statements:
-  * Properties:
+Parses the following statements:
 
-      property :name, Type
+    property :name, Type
 
-  * Has relationships:
+    has n, :things
 
-      has n, :things
+    has 1, :thing
 
-      has 1, :thing
+    has 0..n, :things
 
-      has 0..n, :things
+    has 1..n, :things
 
-      has 1..n, :things
+    has 2..5, :things
 
-      has 2..5, :things
-
-  * Belongs to relationships:
-
-      belongs_to :stuff
+    belongs_to :stuff
 
 ## REQUIREMENTS:
 
