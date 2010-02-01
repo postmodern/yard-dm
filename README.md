@@ -1,7 +1,7 @@
 # yard-dm
 
-* [github.com/postmodern/yard-dm](http://github.com/postmodern/yard-dm/)
-* [github.com/postmodern/yard-dm/issues](http://github.com/postmodern/yard-dm/issues)
+* http://github.com/postmodern/yard-dm/
+* http://github.com/postmodern/yard-dm/issues
 * Postmodern (postmodern.mod3 at gmail.com)
 
 ## DESCRIPTION:
