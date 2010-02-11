@@ -1,29 +1,39 @@
-# -*- ruby -*-
-
 require 'rubygems'
-require 'hoe'
-require 'hoe/signing'
-require './tasks/yard.rb'
+require 'rake'
 
-Hoe.spec('yard-dm') do
-  self.version = '0.1.1'
-  self.developer('Postmodern', 'postmodern.mod3@gmail.com')
-
-  self.readme_file = 'README.md'
-  self.history_file = 'History.md'
-  self.remote_rdoc_dir = '/'
-
-  self.rspec_options += ['--colour', '--format', 'specdoc']
-
-  self.extra_deps += [
-    ['yard', '>=0.4.0']
-  ]
-
-  self.extra_dev_deps += [
-    ['rspec', '>=1.2.9']
-  ]
-
-  self.spec_extras.merge!(:has_rdoc => 'yard')
+begin
+  require 'jeweler'
+  Jeweler::Tasks.new do |gem|
+    gem.name = 'yard-dm'
+    gem.summary = %Q{A YARD plugin for parsing DataMapper model syntax.}
+    gem.description = %Q{Once yard-dm is installed, YARD will automatically load the plugin when ever the `yardoc` utility is ran on a project.}
+    gem.email = 'postmodern.mod3@gmail.com'
+    gem.homepage = 'http://github.com/postmodern/yard-dm'
+    gem.authors = ['Postmodern']
+    gem.add_development_dependency 'rspec', '>= 1.3.0'
+    gem.add_development_dependency 'yard', '>= 0.4.0'
+    gem.has_rdoc = 'yard'
+  end
+rescue LoadError
+  puts "Jeweler (or a dependency) not available. Install it with: gem install jeweler"
 end
 
-# vim: syntax=ruby
+require 'spec/rake/spectask'
+Spec::Rake::SpecTask.new(:spec) do |spec|
+  spec.libs += ['lib', 'spec']
+  spec.spec_files = FileList['spec/**/*_spec.rb']
+  spec.spec_opts = ['--options', '.specopts']
+end
+
+task :spec => :check_dependencies
+task :default => :spec
+
+begin
+  require 'yard'
+
+  YARD::Rake::YardocTask.new
+rescue LoadError
+  task :yard do
+    abort "YARD is not available. In order to run yard, you must: gem install yard"
+  end
+end
