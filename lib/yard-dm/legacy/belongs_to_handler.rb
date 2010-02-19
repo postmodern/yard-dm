@@ -3,7 +3,7 @@ module YARD
     module Legacy
       class BelongsToHandler < YARD::Handlers::Ruby::Legacy::Base
 
-        handles /\Abelongs_to\s/
+        handles /\Abelongs_to\s+:/
 
           def process
             nobj = namespace

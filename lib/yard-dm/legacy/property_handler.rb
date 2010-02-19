@@ -3,7 +3,7 @@ module YARD
     module Legacy
       class PropertyHandler < YARD::Handlers::Ruby::Legacy::Base
 
-        handles /\Aproperty\s/
+        handles /\Aproperty\s+:/
 
           def process
             nobj = namespace
