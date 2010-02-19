@@ -1,3 +1,10 @@
+### 0.1.1 / 2010-02-18
+
+* Fixed incorrect parsing of variables named `belongs_to` or `property`
+  under Ruby 1.8.x.
+* Added specs for parsing invalid `property`, `has` and `property`
+  statements.
+
 ### 0.1.0 / 2010-01-13
 
 * Initial release:
