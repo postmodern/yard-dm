@@ -1,0 +1,9 @@
+class InvalidHas
+
+  include DataMapper::Resource
+
+  property :id, Serial
+
+  has = has.to_s.to_sym
+
+end

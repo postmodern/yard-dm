@@ -1,0 +1,10 @@
+class SimpleProperties
+
+  include DataMapper::Resource
+
+  # The primary key of the model
+  property :id, Serial
+
+  property = property.to_s.to_sym
+
+end

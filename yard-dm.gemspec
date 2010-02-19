@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Postmodern"]
-  s.date = %q{2010-02-11}
+  s.date = %q{2010-02-18}
   s.description = %q{Once yard-dm is installed, YARD will automatically load the plugin when ever the `yardoc` utility is ran on a project.}
   s.email = %q{postmodern.mod3@gmail.com}
   s.extra_rdoc_files = [
@@ -42,11 +42,15 @@ Gem::Specification.new do |s|
     "spec/helpers/examples/has_one_to_n.rb.txt",
     "spec/helpers/examples/has_zero.rb.txt",
     "spec/helpers/examples/has_zero_to_n.rb.txt",
+    "spec/helpers/examples/invalid_belongs_to.rb.txt",
+    "spec/helpers/examples/invalid_has.rb.txt",
+    "spec/helpers/examples/invalid_properties.rb.txt",
     "spec/helpers/examples/simple_belongs_to.rb.txt",
     "spec/helpers/examples/simple_properties.rb.txt",
     "spec/property_handler_spec.rb",
     "spec/spec_helper.rb",
-    "tasks/yard.rb"
+    "tasks/yard.rb",
+    "yard-dm.gemspec"
   ]
   s.has_rdoc = %q{yard}
   s.homepage = %q{http://github.com/postmodern/yard-dm}

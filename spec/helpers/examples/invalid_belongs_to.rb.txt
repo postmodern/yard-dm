@@ -1,0 +1,9 @@
+class InvalidBelongsTo
+
+  include DataMapper::Resource
+
+  property :id, Serial
+
+  belongs_to = belongs_to.to_s.to_sym
+
+end
