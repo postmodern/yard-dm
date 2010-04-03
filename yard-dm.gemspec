@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Postmodern"]
-  s.date = %q{2010-02-18}
+  s.date = %q{2010-04-02}
   s.description = %q{Once yard-dm is installed, YARD will automatically load the plugin when ever the `yardoc` utility is ran on a project.}
   s.email = %q{postmodern.mod3@gmail.com}
   s.extra_rdoc_files = [
@@ -54,9 +54,10 @@ Gem::Specification.new do |s|
   ]
   s.has_rdoc = %q{yard}
   s.homepage = %q{http://github.com/postmodern/yard-dm}
+  s.licenses = ["MIT"]
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.5}
+  s.rubygems_version = %q{1.3.6}
   s.summary = %q{A YARD plugin for parsing DataMapper model syntax.}
   s.test_files = [
     "spec/helpers/examples.rb",

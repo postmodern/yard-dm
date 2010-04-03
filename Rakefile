@@ -5,6 +5,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = 'yard-dm'
+    gem.license = 'MIT'
     gem.summary = %Q{A YARD plugin for parsing DataMapper model syntax.}
     gem.description = %Q{Once yard-dm is installed, YARD will automatically load the plugin when ever the `yardoc` utility is ran on a project.}
     gem.email = 'postmodern.mod3@gmail.com'
