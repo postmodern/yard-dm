@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Postmodern"]
-  s.date = %q{2010-04-02}
+  s.date = %q{2010-06-15}
   s.description = %q{Once yard-dm is installed, YARD will automatically load the plugin when ever the `yardoc` utility is ran on a project.}
   s.email = %q{postmodern.mod3@gmail.com}
   s.extra_rdoc_files = [
@@ -22,6 +22,7 @@ Gem::Specification.new do |s|
     ".specopts",
     ".yardopts",
     "ChangeLog.md",
+    "Gemfile",
     "LICENSE.txt",
     "README.md",
     "Rakefile",
@@ -55,32 +56,40 @@ Gem::Specification.new do |s|
   s.has_rdoc = %q{yard}
   s.homepage = %q{http://github.com/postmodern/yard-dm}
   s.licenses = ["MIT"]
-  s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.6}
+  s.rubygems_version = %q{1.3.7}
   s.summary = %q{A YARD plugin for parsing DataMapper model syntax.}
   s.test_files = [
-    "spec/helpers/examples.rb",
-    "spec/spec_helper.rb",
     "spec/belongs_to_handler_spec.rb",
+    "spec/has_handler_spec.rb",
+    "spec/helpers/examples.rb",
     "spec/property_handler_spec.rb",
-    "spec/has_handler_spec.rb"
+    "spec/spec_helper.rb"
   ]
 
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
-    if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
-      s.add_development_dependency(%q<rspec>, [">= 1.3.0"])
-      s.add_development_dependency(%q<yard>, [">= 0.4.0"])
+    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<yard>, ["~> 0.5.3"])
+      s.add_development_dependency(%q<yard>, ["~> 0.5.3"])
+      s.add_development_dependency(%q<rake>, ["~> 0.8.7"])
+      s.add_development_dependency(%q<jeweler>, ["~> 1.4.0"])
+      s.add_development_dependency(%q<rspec>, ["~> 1.3.0"])
     else
-      s.add_dependency(%q<rspec>, [">= 1.3.0"])
-      s.add_dependency(%q<yard>, [">= 0.4.0"])
+      s.add_dependency(%q<yard>, ["~> 0.5.3"])
+      s.add_dependency(%q<yard>, ["~> 0.5.3"])
+      s.add_dependency(%q<rake>, ["~> 0.8.7"])
+      s.add_dependency(%q<jeweler>, ["~> 1.4.0"])
+      s.add_dependency(%q<rspec>, ["~> 1.3.0"])
     end
   else
-    s.add_dependency(%q<rspec>, [">= 1.3.0"])
-    s.add_dependency(%q<yard>, [">= 0.4.0"])
+    s.add_dependency(%q<yard>, ["~> 0.5.3"])
+    s.add_dependency(%q<yard>, ["~> 0.5.3"])
+    s.add_dependency(%q<rake>, ["~> 0.8.7"])
+    s.add_dependency(%q<jeweler>, ["~> 1.4.0"])
+    s.add_dependency(%q<rspec>, ["~> 1.3.0"])
   end
 end
 
