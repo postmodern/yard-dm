@@ -1,8 +1,15 @@
 require 'rubygems'
-gem 'rspec', '>=1.2.9'
-require 'spec'
+require 'bundler'
 
-gem 'yard', '>=0.4.0'
+begin
+  Bundler.setup(:runtime, :test)
+rescue Bundler::BundlerError => e
+  STDERR.puts e.message
+  STDERR.puts "Run `bundle install` to install missing gems"
+  exit e.status_code
+end
+
+require 'spec'
 require 'yard'
 
 include YARD
