@@ -7,4 +7,6 @@ class SimpleProperties
 
   property = property.to_s.to_sym
 
+  property
+
 end
