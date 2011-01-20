@@ -30,6 +30,7 @@ Spec::Rake::SpecTask.new(:spec) do |spec|
   spec.spec_opts = ['--options', '.specopts']
 end
 
+task :test => :spec
 task :default => :spec
 
 require 'yard'
