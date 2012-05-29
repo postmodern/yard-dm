@@ -1,0 +1,1 @@
+require 'yard/dm/version'

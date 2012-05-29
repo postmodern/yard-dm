@@ -1,8 +1,8 @@
 # yard-dm
 
-* [github.com/postmodern/yard-dm](http://github.com/postmodern/yard-dm/)
-* [github.com/postmodern/yard-dm/issues](http://github.com/postmodern/yard-dm/issues)
-* Postmodern (postmodern.mod3 at gmail.com)
+* [Source](https://github.com/postmodern/yard-dm)
+* [Issues](https://github.com/postmodern/yard-dm/issues)
+* [Email](mailto:postmodern.mod3 at gmail.com)
 
 ## Description
 
@@ -31,13 +31,12 @@ Parses the following statements:
 
 ## Requirements
 
-* [yard](http://yardoc.org/) >= 0.4.0
+* [yard](http://yardoc.org/) ~> 0.4
 
 ## Install
 
-    $ sudo gem install yard-dm
+    $ gem install yard-dm
 
 ## License
 
 See {file:LICENSE.txt} for license information.
-

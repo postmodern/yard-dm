@@ -1,19 +1,13 @@
-source 'https://rubygems.org'
+source :rubygems
 
-gem 'yard',	'~> 0.6', :group => [:development, :runtime]
+gemspec
 
-group(:development) do
-  gem 'rake',			'~> 0.8.7'
-  gem 'jeweler',		'~> 1.5.0.pre'
+group :development do
+  gem 'rake',           '~> 0.8'
+  gem 'rubygems-tasks', '~> 0.2'
+
+  gem 'rspec',  '~> 2.4'
+
+  gem 'kramdown', '~> 0.12'
+  gem 'yard'
 end
-
-group(:doc) do
-  case RUBY_PLATFORM
-  when 'java'
-    gem 'maruku',	'~> 0.6.0'
-  else
-    gem 'rdiscount',	'~> 1.6.3'
-  end
-end
-
-gem 'rspec',	'~> 1.3.0', :group => [:development, :test]

@@ -1,15 +1,4 @@
-require 'rubygems'
-require 'bundler'
+require 'rspec'
+require 'yard/dm/version'
 
-begin
-  Bundler.setup(:runtime, :test)
-rescue Bundler::BundlerError => e
-  STDERR.puts e.message
-  STDERR.puts "Run `bundle install` to install missing gems"
-  exit e.status_code
-end
-
-require 'spec'
-require 'yard'
-
-include YARD
+include YARD::DataMapper

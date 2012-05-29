@@ -1,37 +1,34 @@
+# encoding: utf-8
+
 require 'rubygems'
-require 'bundler'
 
 begin
-  Bundler.setup(:development, :doc)
+  require 'bundler'
+rescue LoadError => e
+  warn e.message
+  warn "Run `gem install bundler` to install Bundler."
+  exit e.status_code
+end
+
+begin
+  Bundler.setup(:development)
 rescue Bundler::BundlerError => e
-  STDERR.puts e.message
-  STDERR.puts "Run `bundle install` to install missing gems"
+  warn e.message
+  warn "Run `bundle install` to install missing gems."
   exit e.status_code
 end
 
 require 'rake'
-require 'jeweler'
 
-Jeweler::Tasks.new do |gem|
-  gem.name = 'yard-dm'
-  gem.license = 'MIT'
-  gem.summary = %Q{A YARD plugin for parsing DataMapper model syntax.}
-  gem.description = %Q{Once yard-dm is installed, YARD will automatically load the plugin when ever the `yardoc` utility is ran on a project.}
-  gem.email = 'postmodern.mod3@gmail.com'
-  gem.homepage = 'http://github.com/postmodern/yard-dm'
-  gem.authors = ['Postmodern']
-  gem.has_rdoc = 'yard'
-end
+require 'rubygems/tasks'
+Gem::Tasks.new
 
-require 'spec/rake/spectask'
-Spec::Rake::SpecTask.new(:spec) do |spec|
-  spec.libs += ['lib', 'spec']
-  spec.spec_files = FileList['spec/**/*_spec.rb']
-  spec.spec_opts = ['--options', '.specopts']
-end
+require 'rspec/core/rake_task'
+RSpec::Core::RakeTask.new
 
-task :test => :spec
+task :test    => :spec
 task :default => :spec
 
 require 'yard'
-YARD::Rake::YardocTask.new
+YARD::Rake::YardocTask.new  
+task :doc => :yard
