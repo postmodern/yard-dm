@@ -1,5 +1,5 @@
 name: yard-dm
-version: 0.1.1
+version: 0.1.2
 summary: A YARD plugin for parsing DataMapper model syntax.
 description:
   Once yard-dm is installed, YARD will automatically load the plugin when
