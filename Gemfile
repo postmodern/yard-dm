@@ -3,11 +3,11 @@ source :rubygems
 gemspec
 
 group :development do
-  gem 'rake',           '~> 0.8'
+  gem 'rake',           '~> 10.0'
   gem 'rubygems-tasks', '~> 0.2'
 
   gem 'rspec',  '~> 2.4'
 
   gem 'kramdown', '~> 0.12'
-  gem 'yard'
+  gem 'yard', :git => 'http://github.com/lsegal/yard.git'
 end
